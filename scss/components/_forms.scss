@@ -1,0 +1,25 @@
+form {
+    display: none;
+}
+
+//TABLET
+
+@media (min-width: 768px) {
+    form {
+        display: flex;
+        justify-content: end;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        align-items: center;
+    }
+
+}
+
+//Desktop
+
+@media (min-width: 1200px){
+    form {
+        justify-content: center;
+    }
+    
+}

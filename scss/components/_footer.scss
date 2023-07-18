@@ -1,0 +1,75 @@
+footer {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:h4 {
+        text-align: center;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+    }
+
+    &:p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.span__insta {
+    background-color: orangered;
+    border-radius: 5px;
+    padding: .3rem;
+}
+
+.span___face {
+    background-color: blue;
+    border-radius: 5px;
+    padding: .3rem;
+}
+
+.span__tiktok {
+    background-color: gray;
+    border-radius: 5px;
+    padding: .3rem;
+}
+
+//Tablet
+
+@media (min-width: 768px) {
+    footer {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__nosotros {
+        grid-column: span 2;
+    }
+
+    .cue__con-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .block {
+        grid-column: span 2;
+    }
+}
+
+//Desktop
+
+@media (min-width: 1200px) {
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer.footer__nosotros {
+        grid-column: span 1;
+    }
+
+}

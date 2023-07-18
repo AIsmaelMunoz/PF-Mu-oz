@@ -27,6 +27,9 @@
     }
 }
 
-.cue__con-boton {
-    background: blanchedalmond;
+@media (min-width: 1200px){
+    .cuerpo__contacto {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }

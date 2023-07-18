@@ -1,3 +1,4 @@
+//Mobile
 
 main {
     display: flex;
@@ -26,3 +27,48 @@ main {
     color: rgb(95, 95, 95);
 }
 
+//Tablet
+
+@media (min-width: 768px) {
+    main {
+        text-align: center;
+    }
+
+    .main__destacado {
+        align-items: center;
+        padding: 1rem;
+
+        &:img {
+            max-height: 450px;
+            object-fit: cover;
+        }
+    }
+
+    .section__tarjetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 1rem;
+
+        &:img {
+            max-height: 300px;
+            object-fit: scale-down;
+        }
+    }
+
+
+}
+
+//Desktop
+
+@media (min-width: 1200px) {
+    .section__tarjetas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section__h3 {
+        padding-top: 3rem;
+    }
+
+}
