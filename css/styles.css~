@@ -50,7 +50,6 @@ footer {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 footer:h4 {
   text-align: center;
@@ -75,7 +74,7 @@ footer:p {
 }
 
 .span__tiktok {
-  background-color: rgb(95, 95, 95);
+  background-color: gray;
   border-radius: 5px;
   padding: 0.3rem;
 }
@@ -85,7 +84,6 @@ footer:p {
     gap: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
   }
   .footer__nosotros {
     grid-column: span 2;
@@ -102,8 +100,10 @@ footer:p {
 }
 @media (min-width: 1200px) {
   footer {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer.footer__nosotros {
+    grid-column: span 1;
   }
 }
 form {
@@ -124,10 +124,6 @@ form {
     justify-content: center;
   }
 }
-.cue__con-boton {
-  background: blanchedalmond;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -184,14 +180,11 @@ main article {
   .section__h3 {
     padding-top: 3rem;
   }
-  .main__destacado img {
-    max-height: 450px;
-    object-fit: cover;
-  }
 }
 .cuerpo__contacto {
   padding: 1rem;
   padding-bottom: 6rem;
+  background-color: gray;
 }
 .cuerpo__contacto h2 {
   font-size: 1.5rem;
@@ -199,33 +192,22 @@ main article {
   text-align: center;
 }
 
-.cue__con-form {
+.cue__con.form {
   background: rgba(0, 0, 0, 0.116);
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
 }
-
-.cue__con-form div {
+.cue__con.form div {
   padding: 0.2rem;
 }
-.cue__con-form div input,
-.cue__con-form div label,
-.cue__con-form div textarea {
+.cue__con.form div input,
+.cue__con.form div label,
+.cue__con.form div textarea {
   width: 100%;
   padding: 0.5rem;
   border: none;
   border-radius: 5%;
 }
 
-@media (min-width: 768px) {
-  .cue__con-form {
-    background: rgba(0, 0, 0, 0.116);
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
 @media (min-width: 1200px) {
   .cuerpo__contacto {
     margin-left: 5%;
@@ -233,4 +215,4 @@ main article {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css~.map */

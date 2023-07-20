@@ -1,8 +1,6 @@
 //Mobile
-
 main {
-    display: flex;
-    flex-direction: column;
+    @include flex-collumn;
 
     h2 {
         text-align: center;
@@ -12,26 +10,25 @@ main {
 
     article {
         margin-bottom: 0.5rem;
-        text-align: center;
+        @include text-center;
         padding: 0.3rem;
     }
 }
 
 .section__art-pcto {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: $ff-arial;
+    color: $c-black;
 }
 
 .section__art-des {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(95, 95, 95);
+    font-family: $ff-arial;
+    color: $c-gray;
 }
 
 //Tablet
-
 @media (min-width: 768px) {
     main {
-        text-align: center;
+        @include text-center;
     }
 
     .main__destacado {
@@ -61,7 +58,6 @@ main {
 }
 
 //Desktop
-
 @media (min-width: 1200px) {
     .section__tarjetas {
         grid-template-columns: repeat(4, 1fr);
@@ -71,4 +67,10 @@ main {
         padding-top: 3rem;
     }
 
+    .main__destacado {
+        img {
+            max-height: 450px;
+            object-fit: cover;
+        }
+    }
 }

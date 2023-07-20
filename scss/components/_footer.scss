@@ -1,10 +1,11 @@
+//Mobile
 footer {
-    background-color: black;
-    color: white;
+    background-color: $c-black;
+    color: $c-white;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+    @include flex-collumn;
+    font-family: $ff-arial;
+    @include text-center;
 
     &:h4 {
         text-align: center;
@@ -13,7 +14,7 @@ footer {
     }
 
     &:p {
-        text-align: center;
+        @include text-center;
         font-size: 1rem;
     }
 }
@@ -31,18 +32,18 @@ footer {
 }
 
 .span__tiktok {
-    background-color: gray;
+    background-color: $c-gray;
     border-radius: 5px;
     padding: .3rem;
 }
 
 //Tablet
-
 @media (min-width: 768px) {
     footer {
         gap: 1rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @include text-center;
     }
 
     .footer__nosotros {
@@ -62,14 +63,10 @@ footer {
 }
 
 //Desktop
-
 @media (min-width: 1200px) {
     footer {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    footer.footer__nosotros {
-        grid-column: span 1;
+        grid-template-columns: repeat(2, 1fr);
+        @include text-center;
     }
 
 }

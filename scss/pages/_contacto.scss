@@ -1,33 +1,49 @@
+//Moobile
 .cuerpo__contacto {
+
     padding: 1rem;
     padding-bottom: 6rem;
 
     h2 {
         font-size: 1.5rem;
         padding-bottom: 1rem;
-        text-align: center;
+        @include text-center;
     }
 }
 
-.cue__con.form {
+
+.cue__con-form {
     background: rgba(0, 0, 0, 0.116);
     padding: 1rem;
+    @include flex-collumn;
+}
 
-    div {
-        padding: 0.2rem;
+.cue__con-form div {
+    padding: 0.2rem;
 
-        input,
-        label,
-        textarea {
-            width: 100%;
-            padding: .5rem;
-            border: none;
-            border-radius: 5%;
-        }
+    input,
+    label,
+    textarea {
+        width: 100%;
+        padding: .5rem;
+        border: none;
+        border-radius: 5%;
     }
 }
 
-@media (min-width: 1200px){
+//Tablet
+@media (min-width: 768px) {
+    .cue__con-form {
+        background: rgba(0, 0, 0, 0.116);
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+//Desktop
+@media (min-width: 1200px) {
     .cuerpo__contacto {
         margin-left: 5%;
         margin-right: 5%;
