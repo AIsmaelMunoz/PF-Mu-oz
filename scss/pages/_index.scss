@@ -1,9 +1,11 @@
 //Mobile
+
 main {
     @include flex-collumn;
 
     h2 {
-        text-align: center;
+        @include text-center;
+        font-family: $ff-montserrat;
         font-size: 1rem;
         padding: 1rem;
     }
@@ -24,6 +26,16 @@ main {
     font-family: $ff-arial;
     color: $c-gray;
 }
+.main__destacado {
+    align-items: center;
+    padding: 1rem;
+
+    img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
 
 //Tablet
 @media (min-width: 768px) {
@@ -35,8 +47,8 @@ main {
         align-items: center;
         padding: 1rem;
 
-        &:img {
-            max-height: 450px;
+        img {
+            max-height: 300px;
             object-fit: cover;
         }
     }
@@ -65,6 +77,7 @@ main {
 
     .section__h3 {
         padding-top: 3rem;
+        font-family: $ff-montserrat;
     }
 
     .main__destacado {

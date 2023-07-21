@@ -1,4 +1,5 @@
 header {
+    font-family: $ff-montserrat;
     background: $c-principal;
     display: flex;
     flex-direction: column;
@@ -15,6 +16,8 @@ header {
             text-align: start;
             padding-left: 1rem;
             padding-top: 1rem;
+            font-family: $ff-montserrat;
+            font-weight: 600;
         }
 
         nav {
@@ -27,7 +30,7 @@ header {
 
 //Desktop
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     header h1 {
         @include text-center;
     }

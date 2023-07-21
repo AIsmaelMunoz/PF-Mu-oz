@@ -1,5 +1,10 @@
 form {
+    font-family: $ff-montserrat;
     display: none;
+}
+.form{
+    border-radius: 5px;
+    border: none;
 }
 
 //TABLET
@@ -12,7 +17,6 @@ form {
         padding-top: 1rem;
         align-items: center;
     }
-
 }
 
 //Desktop

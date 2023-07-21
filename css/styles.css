@@ -16,6 +16,7 @@ a {
 }
 
 header {
+  font-family: Montserrat, sans-serif;
   background: blanchedalmond;
   display: flex;
   flex-direction: column;
@@ -32,6 +33,8 @@ header {
     text-align: start;
     padding-left: 1rem;
     padding-top: 1rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
   }
   header nav {
     grid-column: span 2;
@@ -44,6 +47,7 @@ header {
   }
 }
 footer {
+  font-family: Montserrat, sans-serif;
   background-color: black;
   color: white;
   padding: 0.5rem;
@@ -107,7 +111,13 @@ footer:p {
   }
 }
 form {
+  font-family: Montserrat, sans-serif;
   display: none;
+}
+
+.form {
+  border-radius: 5px;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -128,12 +138,18 @@ form {
   background: blanchedalmond;
 }
 
+.tarjeta img {
+  max-height: 350px;
+  object-fit: contain;
+}
+
 main {
   display: flex;
   flex-direction: column;
 }
 main h2 {
   text-align: center;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -153,6 +169,15 @@ main article {
   color: rgb(95, 95, 95);
 }
 
+.main__destacado {
+  align-items: center;
+  padding: 1rem;
+}
+.main__destacado img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
 @media (min-width: 768px) {
   main {
     text-align: center;
@@ -161,8 +186,8 @@ main article {
     align-items: center;
     padding: 1rem;
   }
-  .main__destacado:img {
-    max-height: 450px;
+  .main__destacado img {
+    max-height: 300px;
     object-fit: cover;
   }
   .section__tarjetas {
@@ -183,6 +208,7 @@ main article {
   }
   .section__h3 {
     padding-top: 3rem;
+    font-family: Montserrat, sans-serif;
   }
   .main__destacado img {
     max-height: 450px;
@@ -190,6 +216,7 @@ main article {
   }
 }
 .cuerpo__contacto {
+  font-family: Montserrat, sans-serif;
   padding: 1rem;
   padding-bottom: 6rem;
 }
@@ -231,6 +258,23 @@ main article {
     margin-left: 5%;
     margin-right: 5%;
   }
+}
+h3 {
+  text-align: center;
+  gap: 1rem;
+  font-family: Montserrat, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  gap: 1rem;
+  font-family: Montserrat, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  gap: 1rem;
+  font-family: Montserrat, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
